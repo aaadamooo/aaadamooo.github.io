@@ -1,0 +1,19 @@
+{
+    "questions": [
+      {
+        "question": "Który z wskazanych grzybów jest pasożytem?",
+        "options": ["a) Siedzuń sosnowy", "b) Czernidłak ", "c) Czubajka czerwieniejąca", "d) Goryczak żółciowy"],
+        "correctAnswer": "a"
+      },
+      {
+        "question": "Który z wskazanych grzybów ma czerwony kapelusz?",
+        "options": ["a) borowik szlachetny", "b) gołąbek winny", "c) pieczarka polna", "d) czubajka kania"],
+        "correctAnswer": "b"
+      },
+      {
+        "question": "który z wskazanych grzybów występuje wyłączeni na pniach?",
+        "options": ["a) muchomor czerwony", "b) smardz jadalny", "c) opieńka miodowa", "d) maślak pstry"],
+        "correctAnswer": "c"
+      }
+    ]
+  }

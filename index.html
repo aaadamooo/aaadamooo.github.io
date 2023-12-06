@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style_one.css">
+    <title>Grzyby</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="mapa.html">Mapa</a>
+            </li>
+            <li>
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li>
+              <a href="index.html">Główna</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <!-- Top Container -->
+        <section class="top-container">
+          <header class="showcase">
+
+            <h1>Witaj na mojej stronie.</h1>
+            <p>Strona poświęcona jest grzybom. Zawiera galerię z opisami, quiz oraz formularz kontaktowy.</p>
+            
+          </header>
+          <div class="top-box top-box-a">
+            <h4>Napisz do mnie:</h4>
+
+            <form id = "myForm" action="/submit-form" method="POST">
+                <label for="name">Imię:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+              
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+              
+                <label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"resize: none; required></textarea><br><br>
+              
+                <input type="submit" value="wyślij" class="btn">
+              </form>
+              
+          </div>
+          <div class="top-box top-box-b">
+            <img id="img_one" src="/images/mushroomOne.png" alt="">
+            <a href="" class="btn">TODO</a>
+          </div>
+        </section>
+    
+    
+        <!-- Info Section -->
+        <section class="info">
+          
+          <div>
+            <h2>Powiększ swoją wiedzę o grzybach!</h2>
+            <p>Zapraszam do fascynującej podróży po świecie grzybów! Poznanie sztuki rozpoznawania grzybów to nie tylko sposób na poszerzenie wiedzy o naturze, ale także szansa na odkrycie różnorodności form, kształtów i barw tych niezwykłych organizmów.</p>
+            <a href="https://grzyby.pl/wystepowanie.htm" class="btn">Dowiedz się więcej</a>
+          </div>
+          <div>
+            <form id="quizForm">
+              <h3 id="questionText"></h3>
+              <label>
+                <input type="radio" name="question" value="a"> <span id="option1"></span>
+              </label><br>
+              <label>
+                <input type="radio" name="question" value="b"> <span id="option2"></span>
+              </label><br>
+              <label>
+                <input type="radio" name="question" value="c"> <span id="option3"></span>
+              </label><br>
+              <label>
+                <input type="radio" name="question" value="d"> <span id="option4"></span>
+              </label><br>
+              <button type="button" class="btn" onclick="checkAnswer()">Odpowiedz!</button>
+            </form>
+          </div>
+
+        </section>
+    
+        <!-- atlas -->
+        <section class="atlas">
+          <div class="wrap">
+            <img src="\images\photos\20_440.jpg" alt="">
+            <div class="cap"> Borowik ponury, jadalny ale nie warto go zbierać. </div>
+        </div>
+        
+        <div class="wrap">
+          <img src="\images\photos\40_440.jpg" alt="">
+            <div class="cap">Borowik szlachetny, najbardziej ceniony grzyb jadalny. </div>
+        </div>
+        
+        <div class="wrap">
+          <img src="\images\photos\550_440.jpg" alt="">
+            <div class="cap"> Koźlarz babka, średniej jakości grzyb jadalny. </div>
+        </div>
+        
+        <div class="wrap">
+          <img src="\images\photos\810_440.jpg" alt="">
+            <div class="cap"> Mleczaj rydz, wyborny grzyb o charakterystycznej barwie. </div>
+        </div>
+        
+        <div class="wrap">
+          <img src="\images\photos\920_440.jpg" alt="">
+            <div class="cap"> Muchomor sromotnikowy, śmiertelnie trujący. </div>
+        </div>
+        
+        <div class="wrap">
+          <img src="\images\photos\980_440.jpg" alt="">
+            <div class="cap"> Pieprznik jadalny, zwyczajowo nazywany kurkom.  </div>
+        </div>
+        
+        <div class="wrap">
+            <img src="\images\photos\1080_440.jpg" alt="">
+            <div class="cap"> Podgrzybek brunatny, wyjątkowo niesmaczny najlepiej nie zbierać. </div>
+        </div>
+        
+        <div class="wrap">
+            <img src="\images\photos\40_430.jpg" alt="">
+            <div class="cap">Koźlarz krawiec, rzadki... </div>
+        </div>
+        
+        <div class="wrap">
+            <img src="\images\photos\1310_440.jpg" alt="">
+            <div class="cap"> Borowik szatański, jedyny silnie trujący grzyb rurkowy występujący w naszym kraju. </div>
+        </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+          <p>Adam Kwiatkowski &copy;2023</p>
+        </footer>
+    
+      </div>
+
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script src="script.js"></script>
+      <script src="emailForm.js"></script>
+</body>
+</html>
